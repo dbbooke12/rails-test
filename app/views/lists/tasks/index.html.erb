@@ -1,0 +1,31 @@
+<h1>List Tasks</h1>
+
+<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Due Date</th>
+        <th>Completed</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tasks.each do |task| %>
+        <tr>
+          <td><%= task.name %></td>
+          <td><%= task.due_date.strftime("Due date is %m/%d/%Y") %></td>
+          <td><%= task.complete %></td>
+          <td>
+            <%= link_to 'Show', list_task_path(@list, task) %>
+            <%= link_to 'Edit', edit_list_task_path(@list, task) %>
+            <%= link_to 'Destroy', list_task_path(@list, task), method: :delete, confirm: 'Are you sure?' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+<br />
+
+<%= link_to 'Back', lists_path %> |
+<%= link_to 'New Task', new_list_task_path(@list) %>
