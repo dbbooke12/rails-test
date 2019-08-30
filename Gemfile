@@ -5,6 +5,8 @@ gem 'pg', '0.15'
 gem 'jquery-rails'
 gem 'uglifier'
 
+gem 'rails_12factor', group: :production
+
 
 group :test, :development do
   gem 'rspec-rails'
