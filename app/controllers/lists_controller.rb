@@ -9,7 +9,6 @@ class ListsController < ApplicationController
   # GET /lists/1
   def show
     @list = List.find(params[:id])
-    respond_with(@list)
   end
 
   # GET /lists/new
