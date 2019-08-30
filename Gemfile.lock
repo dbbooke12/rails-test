@@ -76,7 +76,7 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pg (0.11.0)
+    pg (0.15.0)
     polyglot (0.3.5)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -152,7 +152,7 @@ DEPENDENCIES
   guard-rails
   guard-rspec
   jquery-rails
-  pg (= 0.11)
+  pg (= 0.15)
   rails (= 3.2.17)
   rspec-rails
   uglifier
