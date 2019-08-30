@@ -163,5 +163,8 @@ DEPENDENCIES
   rspec-rails
   uglifier
 
+RUBY VERSION
+   ruby 2.0.0p247
+
 BUNDLED WITH
    1.17.3
