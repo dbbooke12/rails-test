@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.4.7'  
 
-gem 'rails', '3.2.17'
+gem 'rails', '5.2.8.1'
 gem 'pg', '0.15'
 gem 'jquery-rails'
 gem 'uglifier'
